@@ -4,23 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- <link rel="stylesheet" href="../sprint-1__startkit/styles/style.css"> -->
+  <link rel="stylesheet" href="../sprint-1__startkit/pages/index.css">
+  <link rel="stylesheet" href="../sprint-1__startkit/vendor/normalize.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img src="images/logo_place_header.svg" class="logo header__logo_place_header">
+      <img src="../sprint-1__startkit/images/logo_place_header.svg" class="logo header__logo_place_header">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать &#8594</a>
       </p>
-      <img src="images/two_again.png" class="header__main-illustration" 
+      <img src="../sprint-1__startkit/images/two_again.png" class="header__main-illustration" 
       alt="картина Фёдора Павловича Решетникова 'Опять двойка'">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic_container">
+        <div class="header__square-pic rotation rotation__square"></div>
+      </div>
     </header>
-
     <main class="content">
       <section class="description">
         <div class="two-columns">
@@ -50,6 +52,7 @@
         <h2 class="digits__section-title">Цифры и факты</h2>
         <h3 class="digits__section-subtitle">Про учёбу и мозг</h3>
         <div class="digits__table">
+
           <div class="table__cell">
             <h3 class="table__headng">86 миллиардов</h3>
             <span class="table__text">Число нейронов в мозге человека</span>
@@ -87,10 +90,12 @@
             <span class="table__text">Открытие кривой забывания</span>
           </div>
 
+
           <div class="table__cell">
             <h3 class="table__headng">1889 год</h3>
             <span class="table__text">Открытие условного рефлекса</span>
           </div>
+
         </div>
       </section>
 
@@ -98,10 +103,13 @@
         <h1 class="feynman__title">Метод Фейнмана</h1>
         <h2 class="feynman__subtitle">Выучить и не забыть.</h2>
         <a href="#" class="feynman__link">Подробнее &#8594</a>
-        <img src="images/feynman.png" class="feynman__image">
+        <img src="../sprint-1__startkit/images/feynman.png" class="feynman__image">
       </section>
 
       <section class="kaufman">
+
+
+
         <h2 class="digits__section-title digits__section-title_theme_dark">Принципы обучения</h2>
         <h3 class="digits__section-subtitle digits__section-subtitle_theme_dark">от Джоша Кауфмана</h3>
         <div class="digits__table digits__table_theme_dark">
@@ -141,6 +149,7 @@
             <span class="table__text table__text_theme_dark">Выделите специальное время для занятий.</span>
           </div>
 
+
           <div class="table__cell table__cell_theme_dark">
             <h3 class="table__headng table__headng_theme_dark">8</h3>
             <span class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</span>
@@ -155,19 +164,27 @@
             <h3 class="table__headng table__headng_theme_dark">10</h3>
             <span class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</span>
           </div>
+
+          
+          
         </div>
         
 
-        <img src="images/kaufman-triangle.svg" class="kaufman__triangle">
+        <img src="../sprint-1__startkit/images/kaufman-triangle.svg" class="kaufman__triangle">
+
       </section>
     </main>
     <footer class="footer">
       <div class="footer__column">
         <div class="footer__column-content-copyright">
-          <img src="images/logo_place_footer.svg" class="logo place-footer" alt="Лого подавала"/>
-          <span class="footer__author">&copy; Переверзев Николай</span>
-        </div>
+          <img
+            src="images/logo_place_footer.svg"
+            class="logo place-footer"
+            alt="Лого подавала"
+          />
 
+          <span class="footer__author">&copy; Мишин Даниил</span>
+        </div>
         <div class="footer__column-content-info">
           <span class="footer__column__heading">О практикуме</span>
           <ul class="footer__column__links">
@@ -176,24 +193,35 @@
             <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </div>
-
         <div class="footer__column-content-social">
           <span class="footer__column__heading">Соцсети</span>
           <ul class="footer__column__links">
             <li>
-              <a class="footer__column-link link-social" href="#">
-                <img src="images/youtube_color_white.svg" alt="Лого Youtube" class="footer__social-icon"/>YouTube
-              </a>
+              <a class="footer__column-link link-social" href="#"
+                ><img
+                  src="images/youtube_color_white.svg"
+                  alt="Лого Youtube"
+                  class="footer__social-icon"
+                />YouTube</a
+              >
             </li>
             <li>
-              <a class="footer__column-link link-social" href="#">
-                <img src="images/vk_color_white.svg" alt="Лого Youtube" class="footer__social-icon"/>ВКонтакте
-              </a>
+              <a class="footer__column-link link-social" href="#"
+                ><img
+                  src="images/vk_color_white.svg"
+                  alt="Лого Youtube"
+                  class="footer__social-icon"
+                />ВКонтакте</a
+              >
             </li>
             <li>
-              <a class="footer__column-link link-social" href="#">
-                <img src="images/tiktok_color_white.svg" alt="Лого Youtube" class="footer__social-icon"/>TikTok
-              </a>
+              <a class="footer__column-link link-social" href="#"
+                ><img
+                  src="images/tiktok_color_white.svg"
+                  alt="Лого Youtube"
+                  class="footer__social-icon"
+                />TikTok</a
+              >
             </li>
           </ul>
         </div>
